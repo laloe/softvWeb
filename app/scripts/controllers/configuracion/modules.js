@@ -10,31 +10,33 @@ angular
 			{
 				name: 'home.configuracion.permisos',
 				data: {
-					pageTitle: 'SOFTV | PERMISOS'
+					pageTitle: 'SOFTV | PERMISOS',
+					permissions: {
+						only: ['permisosSelect'],
+						options: {
+							reload: false
+						}
+					}
 				},
 				url: '/configuracion/permisos',
 				templateUrl: 'views/configuracion/permisos.html',
-				controller: 'AtencionCtrl',
+				controller: 'PermisosCtrl',
 				controllerAs: '$ctrl'
 			},
 			{
 				name: 'home.configuracion.roles',
 				data: {
-					pageTitle: 'SOFTV | ROLES'
+					pageTitle: 'SOFTV | ROLES',
+					permissions: {
+						only: ['rolesSelect'],
+						options: {
+							reload: false
+						}
+					}
 				},
 				url: '/configuracion/roles',
 				templateUrl: 'views/configuracion/roles.html',
-				controller: 'AtencionCtrl',
-				controllerAs: '$ctrl'
-			},
-			{
-				name: 'home.configuracion.modulos',
-				data: {
-					pageTitle: 'SOFTV | MODULOS'
-				},
-				url: '/configuracion/modulos',
-				templateUrl: 'views/configuracion/modulos.html',
-				controller: 'AtencionCtrl',
+				controller: 'RolCtrl',
 				controllerAs: '$ctrl'
 			}
 		];
