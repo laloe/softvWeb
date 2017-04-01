@@ -87,7 +87,6 @@ angular
 			return deferred.promise;
 		};
 
-
 		factory.buscarContrato = function(contrato) {
 			var deferred = $q.defer();
 			var Parametros = {
